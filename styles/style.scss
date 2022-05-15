@@ -4,11 +4,9 @@
 $primary: #d3ad7f;
 $secondary: #13131a;
 $black: #13131a;
-$border-color: rgba(255, 255, 255, 0.3);
-$btn-padding-x: 1.5rem;
-$btn-border-radius: 0;
-
+$border-g: rgba(255, 255, 255, 0.3);
 /* variables modifiers ends */
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -28,6 +26,22 @@ body {
 }
 
 /* components modifiers starts */
+.text-main {
+  color: $primary !important;
+}
+
+.btn-main {
+  background-color: $primary !important;
+}
+
+.bg-tertiary {
+  background-color: $secondary;
+}
+
+.border-g {
+  border: solid 0.5px $border-g !important;
+}
+
 .full-width {
   width: 100vw;
   position: relative;
@@ -50,6 +64,9 @@ body {
 .btn {
   letter-spacing: 1px !important;
   box-shadow: none !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  border-radius: 0 !important;
 }
 /* components modifiers ends */
 
@@ -174,5 +191,3 @@ header {
 }
 
 /* contact section ends */
-
-@import "../libs/bootstrap/scss/bootstrap";
